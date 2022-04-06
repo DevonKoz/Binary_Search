@@ -15,7 +15,7 @@ int binarySearch(char** values, int start, int end, const char* value)
         }
         // If element is smaller than mid, then
         // it can only be present in left subarray
-        if (strcmp(values[mid], value) < 0) {
+        if (strcmp(values[mid], value) > 0) {
             return binarySearch(values, start, mid - 1, value);
         }
         // Else the element can only be present
